@@ -15,9 +15,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(user_router)
-app.include_router(ai_response_router)
-app.include_router(email_router)
+
 #to create database
 
 engine=create_engine(DATABASE_URL)
